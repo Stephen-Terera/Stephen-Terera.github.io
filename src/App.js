@@ -1,19 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from "./Header";
-import Footer from "./Footer.js";
-import PlayerCarousel from './carousel.js'
-import CarouselWithCharts from "./CarouselWithCharts"
-import PieChartComponent from "./pieChart.js"
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from './Login.js';
+import Dashboard from './Dashboard.js';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <PlayerCarousel/>
-      <PieChartComponent /> 
-      <Footer/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </Router>
   );
 }
 
