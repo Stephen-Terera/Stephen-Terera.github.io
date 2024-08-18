@@ -14,6 +14,11 @@ const Login = () => {
     navigate('/dashboard');
   };
 
+    const handleRegister = (event)=> {
+        event.preventDefault();
+
+        navigate('/register');
+    }
   return (
     <div class="login-box">
 
@@ -34,7 +39,7 @@ const Login = () => {
             <div>
                 <p class="register-text">Not Registered ?</p>
                 <a href="register.html">
-                    <button class="login-button">Register</button>
+                    <button onClick={handleRegister} class="login-button">Register</button>
                 </a>
                 
             </div>
