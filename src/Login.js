@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.css';
-import logo from "./Removebg_logo.png"
+import './css/App.css';
+import logo from "./images/Removebg_logo.png"
 import Dashboard from './Dashboard';
 import { useNavigate } from 'react-router-dom';
 

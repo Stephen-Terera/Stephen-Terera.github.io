@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import "./Header.css";
-import logo from "./Removebg_logo.png";
+import "./css/Header.css";
+import logo from "./images/Removebg_logo.png";
+import { useNavigate } from 'react-router-dom';
 
 export default function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const navigate = useNavigate();
 
   // Function to toggle the sidebar
   const openNav = () => {
@@ -18,6 +20,12 @@ export default function Header() {
   // Function to toggle the dropdown
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  // Function that handles navigation based on link text or data attribute
+  const handleNavigation = (event, destination) => {
+    event.preventDefault(); // Prevent the default anchor behavior
+    navigate(`/${destination}`);
   };
 
   return (
@@ -57,8 +65,8 @@ export default function Header() {
         <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>
           ×
         </a>
-        <a href="#">Dashboard</a>
-        <a href="#">Network</a>
+        <a href="/dashboard" onClick={(e) => handleNavigation(e, "dashboard")}>Dashboard</a>
+        <a href="/network"  onClick={(e) => handleNavigation(e, "network")}>Network</a>
         <a href="#">Tools</a>
         <a href="#">Withdrawals</a>
         <a href="#">Reports</a>

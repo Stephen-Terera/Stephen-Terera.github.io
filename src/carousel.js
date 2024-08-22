@@ -2,10 +2,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React from 'react';
 import Slider from "react-slick";
-import new_player_icon from './new_players_icon.webp';
-import players_icon from './players_icon.webp';
-import profit from './profit.png';
-import current from './curren_money.png';
+import new_player_icon from './images/new_players_icon.webp';
+import players_icon from './images/players_icon.webp';
+import profit from './images/profit.png';
+import current from './images/curren_money.png';
 
 
 

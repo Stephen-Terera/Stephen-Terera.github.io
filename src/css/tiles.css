@@ -1,0 +1,82 @@
+.results-head{
+    margin-top: 1em;
+    display: grid; 
+    grid-template-columns: 1fr  1fr;
+    padding: 20px;
+    width: 60%;
+    background-color: transparent;
+
+}
+.results-row {
+    border: 1px solid #000; /* Adds border around each row */
+  }
+.results-row{
+    border: 20px;
+    border-color: black; ;
+    border-width: thick;
+}
+.tabs__menu{
+    text-align: left;
+    display: grid;
+    margin-top: 0;
+    border-style: none none outset none;
+    text-decoration: underline;
+    grid-template-columns: auto auto auto 1fr;
+}
+.tabs__menu-item{
+    background-color: transparent;
+    border: none;
+    margin-top: 0.5em; 
+    margin-left: 1em; 
+    margin-bottom: 1.5em;
+    padding: 0; 
+    width: auto;
+
+}
+.tabs_content{
+    border-radius: 10px;
+    border-color: pink;
+    border-style: solid; 
+    width: 50%;
+}
+.user-add-button{
+    padding: 10px;
+    padding-top: 0;
+    margin-left: 1em;
+    justify-self: end;
+}
+.users-table{
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 1em;
+    
+}
+.user-tile{
+    background-color: transparent;
+    border-radius: 20px;
+    border-style: outset;
+    margin-top: 1em; 
+    border-color: #7395bd; 
+    border-width: 2px;
+}
+.user-tile__header{
+    display: grid; 
+    grid-template-columns: auto auto;
+    padding-top: 1em; 
+
+}
+.user-tile__body{
+    display: grid;
+    grid-template-columns: auto auto; 
+    padding: 30px;
+    width: 80%;
+}
+.user-tile-boy-p{
+    margin-top: 0.5em;
+}
+.main-content{
+    border-style: solid;
+    border-width: thin ;
+    border-radius: 15px;
+    margin-top: 1em; 
+}
