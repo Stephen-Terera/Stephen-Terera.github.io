@@ -9,11 +9,14 @@ import PieChartComponent from "./pieChart.js"
 const Dashboard=() => {
   return (
     <div className="App">
-      <Header />
-      <PlayerCarousel/>
-      <PieChartComponent /> 
-      <Footer/>
+      <div class="main"> 
+        <Header />
+        <PlayerCarousel/>
+        <PieChartComponent /> 
+      </div> 
+      <Footer /> 
     </div>
+    
   );
 }
 
