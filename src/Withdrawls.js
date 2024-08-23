@@ -4,6 +4,7 @@ import Tabs from './Tabs';
 import ResultsTable from './ResultsTables';
 import Header from './Header';
 import Footer from './Footer';
+import './css/App.css';
 import "./css/pages.css"
 
 const Withdrawals = () => {
@@ -31,10 +32,12 @@ const Withdrawals = () => {
 
   return (
     <div className="App">
+      <div class="main">
         <Header /> 
+        
 
-      <Tabs tabs={tabs} />
-
+          <Tabs tabs={tabs}  />
+       </div>
       <Footer /> 
     </div>
   );

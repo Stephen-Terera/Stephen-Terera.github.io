@@ -36,8 +36,8 @@ const Network = () => {
       <div class="main">
         <Header /> 
         <Tabs tabs={tabs} />
-      </div>
       <Footer /> 
+      </div>
     </div>
   );
 };

@@ -33,10 +33,11 @@ const Tools = () => {
 
   return (
     <div className="App">
-        <Header /> 
-
-      <Tabs tabs={tabs} />
-
+      <div class="main">
+ 
+        <Header />
+        <Tabs tabs={tabs} />
+      </div>
       <Footer /> 
     </div>
   );

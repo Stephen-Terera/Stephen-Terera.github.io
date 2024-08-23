@@ -1,6 +1,4 @@
-.main{
-    min-height: 100vh;
-}
+
 .results-head{
     margin-top: 1em;
     display: grid; 
@@ -23,6 +21,9 @@
     border: 20px;
     border-color: black; ;
     border-width: thick;
+}
+.tabs{
+    min-height: 100%;
 }
 .tabs__menu{
     text-align: left;
