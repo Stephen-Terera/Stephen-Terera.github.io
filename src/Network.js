@@ -33,10 +33,10 @@ const Network = () => {
 
   return (
     <div className="App">
+      <div class="main">
         <Header /> 
-
-      <Tabs tabs={tabs} />
-
+        <Tabs tabs={tabs} />
+      </div>
       <Footer /> 
     </div>
   );

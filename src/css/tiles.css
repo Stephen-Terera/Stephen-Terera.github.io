@@ -1,3 +1,6 @@
+.main{
+    min-height: 100vh;
+}
 .results-head{
     margin-top: 1em;
     display: grid; 
@@ -7,6 +10,11 @@
     width: 60%;
     background-color: transparent;
 
+}
+.field-values{
+    font-weight: normal;
+    font-size: 0.7em;
+    margin-top: 0.5em;
 }
 .results-row {
     border: 1px solid #000; /* Adds border around each row */
@@ -21,6 +29,7 @@
     display: grid;
     margin-top: 0;
     border-style: none none outset none;
+    border-color: black;
     font-weight: bold;
     grid-template-columns: auto auto auto 1fr;
 }
@@ -81,10 +90,11 @@
     width: 80%;
 }
 .user-tile-boy-p{
+    font-size: 1em;
     margin-top: 0.5em;
 }
 .main-content{
-    border-style: solid;
+    border-style: solid none none none;
     border-width: thin ;
     border-radius: 15px;
     margin-top: 1em; 
