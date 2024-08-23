@@ -67,8 +67,8 @@ export default function Header() {
         </a>
         <a href="/dashboard" onClick={(e) => handleNavigation(e, "dashboard")}>Dashboard</a>
         <a href="/network"  onClick={(e) => handleNavigation(e, "network")}>Network</a>
-        <a href="#">Tools</a>
-        <a href="#">Withdrawals</a>
+        <a href="/tools" onClick={(e) => handleNavigation(e, "tools")} >Tools</a>
+        <a href="/withdrawals"  onClick={(e) => handleNavigation(e, "withdrawals")} >Withdrawals</a>
         <a href="#">Reports</a>
       </nav>
     </header>

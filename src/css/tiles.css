@@ -2,7 +2,8 @@
     margin-top: 1em;
     display: grid; 
     grid-template-columns: 1fr  1fr;
-    padding: 20px;
+    padding: 10px;
+    text-align: left;
     width: 60%;
     background-color: transparent;
 
@@ -20,7 +21,7 @@
     display: grid;
     margin-top: 0;
     border-style: none none outset none;
-    text-decoration: underline;
+    font-weight: bold;
     grid-template-columns: auto auto auto 1fr;
 }
 .tabs__menu-item{
@@ -40,6 +41,9 @@
     width: 50%;
 }
 .user-add-button{
+    background-color: transparent;
+    border-style: none; 
+    font-weight: bold;
     padding: 10px;
     padding-top: 0;
     margin-left: 1em;
@@ -53,22 +57,27 @@
 }
 .user-tile{
     background-color: transparent;
+    text-align: left;
     border-radius: 20px;
     border-style: outset;
     margin-top: 1em; 
+    margin-left: auto;
+    margin-right: auto;
     border-color: #7395bd; 
     border-width: 2px;
+    width: 80%;
 }
 .user-tile__header{
     display: grid; 
+    margin-left: 1em;
     grid-template-columns: auto auto;
     padding-top: 1em; 
 
 }
 .user-tile__body{
     display: grid;
-    grid-template-columns: auto auto; 
-    padding: 30px;
+    grid-template-columns: 1fr 1fr; 
+    padding: 20px;
     width: 80%;
 }
 .user-tile-boy-p{

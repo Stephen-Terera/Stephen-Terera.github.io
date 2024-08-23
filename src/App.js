@@ -6,6 +6,8 @@ import Login from './Login.js';
 import Dashboard from './Dashboard.js';
 import Register from "./Register.js"
 import Network from './Network.js';
+import Tools from "./Tools.js";
+import Withdrawals from './Withdrawls.js';
 
 function App() {
   return (
@@ -15,6 +17,9 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/register" element={<Register />} /> 
         <Route path="/network" element={<Network /> } /> 
+        <Route path="/tools" element={<Tools /> } /> 
+        <Route path="/withdrawals" element={<Withdrawals /> } /> 
+        
       </Routes>
     </Router>
   );
