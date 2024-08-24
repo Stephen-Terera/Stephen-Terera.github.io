@@ -10,8 +10,8 @@ import info2 from './images/three-dots.png'
 const UserTile = ({ user }) => {
   return (
     <div className="user-tile">
+       <button class="more-info"><img class="more-info-pic"src={info}></img></button>
       <div className="user-tile__header">
-        <button class="more-info"><img class="more-info-pic"src={info2}></img></button>
         <h4> Username<br></br> <div class="field-values"> {user.name} </div></h4>
         <h4>User ID<br></br> <div class="field-values">{user.id}</div> </h4> 
       </div>

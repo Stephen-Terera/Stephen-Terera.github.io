@@ -115,7 +115,8 @@
 }
 .more-info{
     background-color: transparent;
-    margin-left: 9em; 
+    margin-left: auto; 
+    margin-top: 0.2em; 
     padding-top: 0; 
     margin-right: 0; 
     text-align: right;
