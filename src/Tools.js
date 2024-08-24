@@ -8,6 +8,7 @@ import "./css/pages.css"
 
 const Tools = () => {
   // Example data for different tables
+  // This will be functions to get the various data from the databases. 
   const usersData = [
     { id: 1, name: 'John Doe', email: 'john@example.com', status: 'Active' },
     { id: 2, name: 'Jane Smith', email: 'jane@example.com', status: 'Inactive' },

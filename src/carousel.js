@@ -43,7 +43,7 @@ export default function PlayerCarousel() {
         <div>
           <div class="tile">
             <img src={profit} class="tile-icon" ></img>
-            <div class="tile=content"> 
+            <div class="tile-content"> 
               <h4>Commisions for yesterday</h4> 
               <p >$$$ </p>
             </div>
