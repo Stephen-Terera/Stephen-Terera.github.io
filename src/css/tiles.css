@@ -68,7 +68,8 @@
     padding: 10px;
     padding-top: 0.5em;
     color: blue;
-    margin-left: 1em;
+    margin-left: 0.5em;
+    margin-right: 1em;
     justify-self: end;
 }
 .users-table{
@@ -114,7 +115,8 @@
 }
 .more-info{
     background-color: transparent;
-    margin-left: auto; 
+    margin-left: 9em; 
+    padding-top: 0; 
     margin-right: 0; 
     text-align: right;
     grid-column: 2; ;
