@@ -8,6 +8,7 @@ import Register from "./Register.js"
 import Network from './Network.js';
 import Tools from "./Tools.js";
 import Withdrawals from './Withdrawls.js';
+import MessageBubble from './MessageBubble.js';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/withdrawals" element={<Withdrawals /> } /> 
         
       </Routes>
+      <MessageBubble />
     </Router>
   );
 }
