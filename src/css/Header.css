@@ -21,6 +21,7 @@ footer{
   width: 100%;
   height: 1.5rem;
   background-color: #c4d6ec;
+  padding-top: 1em; 
   text-align: center;
   font-size: 0.5rem;
 }
