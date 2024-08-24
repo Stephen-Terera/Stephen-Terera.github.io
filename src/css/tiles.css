@@ -141,17 +141,96 @@
     margin-bottom: 1em; 
 }
 .info-options{
-    margin-left: auto; 
+    background-color: transparent;
+    color: rgb(64, 140, 166);
+    margin-left: 0; 
     margin-right: auto; 
     font-weight: bold;
-    border-style: solid none solid none;
-    width: 90%; 
+    font-size: 1em;
+    border-style: none;
+    width: 100%; 
+    text-align: left; 
 }
 .delete{
     color: red; 
 }
 .back-option{
     background-color: transparent;
+    border: none;
     margin-left: 0.5em;
     width: 40%;
 }
+.popup-overlay{
+    z-index: 2;
+}
+/* Popup overlay */
+.popup-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Popup content */
+  .popup-content {
+    background-color: white;
+    bottom:0;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%; /* Covers most of the screen */
+    max-width: 700px;
+    height: 70%; /* Covers a significant portion of the height */
+    position: absolute;
+    overflow-y: auto; /* Allows scrolling if content overflows */
+  }
+  
+  /* Form styles */
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button[type="button"] {
+    background-color: #dc3545;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 600px) {
+    .popup-content {
+      width: 90%;
+      height: 80%;
+    }
+  }
+  

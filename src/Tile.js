@@ -4,19 +4,19 @@ import info from "./images/three_dots_icon.png";
 import React, { useState } from "react";
 
 const UserTile = ({ user }) => {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
   
-  const toggleVisibility = () => {
-    setIsVisible(!isVisible);
+  const togglePopup = () => {
+    setIsPopupVisible(!isPopupVisible);
   };
 
 
 
   return (
     <div className="user-tile">
-      {isVisible ?  (
+      {!isPopupVisible ?  (
         <div class="user-info">
-          <button className="more-info" onClick={toggleVisibility}>
+          <button className="more-info" onClick={togglePopup}>
             <img className="more-info-pic" src={info} alt="More Info" />
           </button>
           <div className="user-tile__header">
@@ -57,15 +57,20 @@ const UserTile = ({ user }) => {
           </div>
         </div>
         ):(
-          <div class="info-tile"> 
-          <button class="back-option "onClick={toggleVisibility}> 🔙 Back</button>
-          <button class="info-options"> 🪪 View e-card</button>
-          <button class="info-options"> 👁️ View</button> 
-          <button class="info-options"> 💰 Wallets </button> 
-          <button class="info-options">  💬 Message</button>
-          <button class="info-options"> 🔁 Transfer </button> 
-          <button class="info-options delete">  🗑️ Delete </button>
+          <div className="popup-overlay">
+          <div className="popup-content ">
+            <button class="info-options"> View-Card</button>
+            <button class="info-options"> Login </button>
+            <button class="info-options">View</button>
+            <button class="info-options">Wallets </button> 
+            <button class="info-options"> Note </button> 
+            <button class="info-options"> Message </button> 
+            <button class="info-options"> Transfer </button> 
+            <button class="info-options delete"> Delete </button>   
+            
+            <button type="button " onClick={togglePopup}>Close</button>
           </div>
+        </div>
 
         )}
     </div>
