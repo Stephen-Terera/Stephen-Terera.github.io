@@ -193,8 +193,7 @@
     border-radius: 8px;
     width: 100%; /* Covers most of the screen */
     height: 70%; /* Covers a significant portion of the height */
-    position: absolute;
-    overflow-y: auto; /* Allows scrolling if content overflows */
+    position: absolute; /* Allows scrolling if content overflows */
   }
   
   
