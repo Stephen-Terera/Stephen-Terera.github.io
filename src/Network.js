@@ -4,7 +4,7 @@ import Tabs from './Tabs';
 import ResultsTable from './ResultsTables';
 import Header from './Header';
 import Footer from './Footer';
-import "./css/pages.css"
+import "./css/tiles.css"
 
 const Network = () => {
   // Example data for different tables

@@ -4,8 +4,7 @@ import Tabs from './Tabs';
 import ResultsTable from './ResultsTables';
 import Header from './Header';
 import Footer from './Footer';
-import './css/App.css';
-import "./css/pages.css"
+import "./css/tiles.css"
 
 const Withdrawals = () => {
   // Example data for different tables
@@ -34,11 +33,10 @@ const Withdrawals = () => {
     <div className="App">
       <div class="main">
         <Header /> 
-        
-
           <Tabs tabs={tabs}  />
+          <Footer /> 
        </div>
-      <Footer /> 
+    
     </div>
   );
 };

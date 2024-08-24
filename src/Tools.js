@@ -38,8 +38,9 @@ const Tools = () => {
  
         <Header />
         <Tabs tabs={tabs} />
+        <Footer /> 
       </div>
-      <Footer /> 
+     
     </div>
   );
 };
