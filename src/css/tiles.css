@@ -146,10 +146,18 @@
     margin-left: 0; 
     margin-right: auto; 
     font-weight: bold;
+    margin-top: 1em; 
     font-size: 1em;
     border-style: none;
     width: 100%; 
     text-align: left; 
+}
+.close{
+    background-color: transparent;
+    border: none; 
+    margin-top: 2em; 
+    font-size: 1.5em; 
+    bottom: 0; 
 }
 .delete{
     color: red; 
@@ -169,8 +177,8 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 75%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,54 +191,11 @@
     padding: 30px;
     border-radius: 8px;
     width: 100%; /* Covers most of the screen */
-    max-width: 700px;
-    height: 70%; /* Covers a significant portion of the height */
+    height: 40%; /* Covers a significant portion of the height */
     position: absolute;
     overflow-y: auto; /* Allows scrolling if content overflows */
   }
   
-  /* Form styles */
-  form div {
-    margin-bottom: 15px;
-  }
   
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
   
-  input,
-  textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    padding: 10px 15px;
-    margin-right: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  button[type="button"] {
-    background-color: #dc3545;
-  }
-  
-  button:hover {
-    opacity: 0.9;
-  }
-  
-  /* Media query for smaller screens */
-  @media (max-width: 600px) {
-    .popup-content {
-      width: 90%;
-      height: 80%;
-    }
-  }
   

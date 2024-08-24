@@ -68,7 +68,7 @@ const UserTile = ({ user }) => {
             <button class="info-options"> Transfer </button> 
             <button class="info-options delete"> Delete </button>   
             
-            <button type="button " onClick={togglePopup}>Close</button>
+            <button type="button "class="close" onClick={togglePopup}>Close</button>
           </div>
         </div>
 
