@@ -155,7 +155,7 @@
 .close{
     background-color: transparent;
     border: none; 
-    margin-top: 2em; 
+    margin-top: 0.5em; 
     font-size: 1.5em; 
     bottom: 0; 
 }
@@ -191,7 +191,7 @@
     padding: 30px;
     border-radius: 8px;
     width: 100%; /* Covers most of the screen */
-    height: 40%; /* Covers a significant portion of the height */
+    height: 50%; /* Covers a significant portion of the height */
     position: absolute;
     overflow-y: auto; /* Allows scrolling if content overflows */
   }
