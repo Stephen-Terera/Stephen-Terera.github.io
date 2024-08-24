@@ -25,8 +25,12 @@
 .sort-btn{
     background-color: transparent;
     border: none; 
+    font-size: 1em; 
     text-align: left; 
     width: 8em; 
+}
+.sort-btn text{
+    margin-top: 0 ;
 }
 .tabs{
     min-height: 100%;
@@ -192,7 +196,7 @@
     padding: 30px;
     border-radius: 8px;
     width: 100%; /* Covers most of the screen */
-    height: 70%; /* Covers a significant portion of the height */
+    height: 50%; /* Covers a significant portion of the height */
     position: absolute; /* Allows scrolling if content overflows */
   }
   

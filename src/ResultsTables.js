@@ -37,7 +37,7 @@ const ResultsTable = ({ data }) => {
           </tr>
         ))}
         <button class="user-add-button"> + Add User</button>
-        <button class="sort-btn"><img src={sort}/></button>
+        <button class="sort-btn"> <img src={sort}/></button>
       </thead>
       <tbody {...getTableBodyProps()}>
         {rows.map(row => {
