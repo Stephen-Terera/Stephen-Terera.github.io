@@ -13,7 +13,7 @@ const MessageBubble = () => {
     <div className="message-container">
       {!isOpen && (
         <button className="message-button" onClick={toggleBubble}>
-          💬 Message
+          💬 Messages
         </button>
       )}
 

@@ -130,3 +130,28 @@
     width: 100%;
     height:100%;
 }
+.info-tile button{
+    display: block;
+    margin-top: 0.5em;
+    font-size: 1em;
+    padding: 5px; 
+
+}
+.info-tile{
+    margin-bottom: 1em; 
+}
+.info-options{
+    margin-left: auto; 
+    margin-right: auto; 
+    font-weight: bold;
+    border-style: solid none solid none;
+    width: 90%; 
+}
+.delete{
+    color: red; 
+}
+.back-option{
+    background-color: transparent;
+    margin-left: 0.5em;
+    width: 40%;
+}
