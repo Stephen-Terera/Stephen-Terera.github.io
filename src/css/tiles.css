@@ -186,12 +186,13 @@
   
   /* Popup content */
   .popup-content {
+    margin-top: 0;
     background-color: white;
     bottom:0;
     padding: 30px;
     border-radius: 8px;
     width: 100%; /* Covers most of the screen */
-    height: 50%; /* Covers a significant portion of the height */
+    height: 70%; /* Covers a significant portion of the height */
     position: absolute;
     overflow-y: auto; /* Allows scrolling if content overflows */
   }
