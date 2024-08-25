@@ -1,9 +1,9 @@
 // App.js
 import React, { useState } from 'react';
-import Tabs from './Tabs';
-import ResultsTable from './ResultsTables';
-import Header from './Header';
-import Footer from './Footer';
+import Tabs from './components/Tabs';
+import ResultsTable from './components/ResultsTables';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import "./css/tiles.css"
 
 const Network = () => {

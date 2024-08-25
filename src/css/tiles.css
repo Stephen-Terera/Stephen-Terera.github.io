@@ -166,6 +166,11 @@
 .delete{
     color: red; 
 }
+.dropdown-buttons{
+    font-size: 1em; 
+    height: 100%;
+    border:none;
+}
 .back-option{
     background-color: transparent;
     border: none;

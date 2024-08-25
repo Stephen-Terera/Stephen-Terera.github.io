@@ -1,4 +1,4 @@
-import PieChartComponent from "./pieChart";
+import PieChartComponent from "./components/pieChart";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React from 'react';

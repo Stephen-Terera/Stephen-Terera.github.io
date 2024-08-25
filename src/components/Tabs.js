@@ -1,7 +1,7 @@
 // Tabs.js
 import React, { useState } from 'react';
 //import "./css/App.css";
-import "./css/tiles.css"
+import "../css/tiles.css"
 
 //import './Tabs.css'; // Optional: for custom styling
 

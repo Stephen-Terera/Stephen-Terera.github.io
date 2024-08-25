@@ -1,6 +1,6 @@
-import "./css/pages.css";
-import "./css/tiles.css";
-import info from "./images/three_dots_icon.png";
+import "../css/pages.css";
+import "../css/tiles.css";
+import info from "../images/three_dots_icon.png";
 import React, { useState } from "react";
 
 const UserTile = ({ user }) => {

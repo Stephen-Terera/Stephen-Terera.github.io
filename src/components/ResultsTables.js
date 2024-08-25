@@ -2,9 +2,9 @@
 import React, { useMemo } from 'react';
 import { useTable } from 'react-table';
 import Tile from "./Tile.js"
-import './css/pages.css'
-import "./css/tiles.css"
-import sort from "./images/Sort icon.png"
+import '../css/pages.css'
+import "../css/tiles.css"
+import sort from "../images/Sort icon.png"
 //import './UsersTable.css'; // Optional: for custom styling
 
 const ResultsTable = ({ data }) => {

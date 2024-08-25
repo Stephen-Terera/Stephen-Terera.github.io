@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import "./css/Header.css";
-import logo from "./images/Removebg_logo.png";
+import "../css/Header.css";
+import logo from "../images/Removebg_logo.png";
 import { useNavigate } from 'react-router-dom';
 
 export default function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isViewingNotifications, setIsViewingNotifications] = useState(false);
   const navigate = useNavigate();
 
   // Function to toggle the sidebar
@@ -17,10 +18,14 @@ export default function Header() {
     setIsSidebarOpen(false);
   };
 
-  // Function to toggle the dropdown
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
+ // Function to toggle the dropdown
+ const toggleDropdown = () => {
+  setIsDropdownOpen(!isDropdownOpen); // Reset notification view when toggling dropdown
+};
+ const toggleNotifications = (event) => {
+  event.preventDefault(); // Prevents the default anchor navigation
+  setIsViewingNotifications(!isViewingNotifications);
+ }
 
   // Function that handles navigation based on link text or data attribute
   const handleNavigation = (event, destination) => {
@@ -48,11 +53,23 @@ export default function Header() {
         {/* Show the dropdown content only if isDropdownOpen is true */}
         {isDropdownOpen && (
           <div id="myDropdown" className="dropdown-content show">
+          {isViewingNotifications ? (
+            <>
             <a href="#home">My Account</a>
             <a href="#settings">Settings</a>
-            <a href="#notifications">Notifications</a>
+            <button  class="dropdown-buttons"onClick={toggleNotifications}> Test</button>
             <a href="#logout">Log Out</a>
-          </div>
+            </>
+          
+          ):(
+            <>
+            <h4>Notifications</h4>
+            <p>No new notifications.</p>
+            <button onClick={toggleNotifications}>Back</button>
+          </>
+
+          )}
+        </div>
         )}
       </div>
 
@@ -62,7 +79,7 @@ export default function Header() {
         className="sidebar"
         style={{ width: isSidebarOpen ? "250px" : "0" }}
       >
-        <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>
+        <a href="#" className="closebtn" onClick={closeNav}>
           ×
         </a>
         <a href="/dashboard" onClick={(e) => handleNavigation(e, "dashboard")}>Dashboard</a>
