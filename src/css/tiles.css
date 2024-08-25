@@ -167,6 +167,7 @@
     color: red; 
 }
 .dropdown-buttons{
+    width: 100%; 
     font-size: 1em; 
     height: 100%;
     border:none;
@@ -179,6 +180,9 @@
 }
 .popup-overlay{
     z-index: 2;
+}
+.notifications{
+    padding:10px;
 }
 /* Popup overlay */
 .popup-overlay {

@@ -53,7 +53,7 @@ export default function Header() {
         {/* Show the dropdown content only if isDropdownOpen is true */}
         {isDropdownOpen && (
           <div id="myDropdown" className="dropdown-content show">
-          {isViewingNotifications ? (
+          {!isViewingNotifications ? (
             <>
             <a href="#home">My Account</a>
             <a href="#settings">Settings</a>
@@ -62,11 +62,11 @@ export default function Header() {
             </>
           
           ):(
-            <>
+            <div class="notifications">
             <h4>Notifications</h4>
             <p>No new notifications.</p>
             <button onClick={toggleNotifications}>Back</button>
-          </>
+          </div>
 
           )}
         </div>
