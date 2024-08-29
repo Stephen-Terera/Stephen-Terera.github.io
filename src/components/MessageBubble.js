@@ -1,6 +1,6 @@
 // src/components/MessageBubble.js
 import React, { useState } from 'react';
-import './css/MessageBubble.css';
+import '../css/MessageBubble.css';
 
 const MessageBubble = () => {
   const [isOpen, setIsOpen] = useState(false);
