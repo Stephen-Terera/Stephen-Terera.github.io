@@ -4,11 +4,11 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './Login.js';
 import Dashboard from './Dashboard.js';
-import Register from "./Register.js"
+import Register from "./pages/Register.js"
 import Network from './Network.js';
 import Tools from "./Tools.js";
 import Withdrawals from './Withdrawls.js';
-import MessageBubble from './MessageBubble.js';
+import MessageBubble from './components/MessageBubble.js';
 
 function App() {
   return (

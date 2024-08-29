@@ -11,7 +11,6 @@ const UserTile = ({ user }) => {
   };
 
 
-
   return (
     <div className="user-tile">
       {!isPopupVisible ?  (

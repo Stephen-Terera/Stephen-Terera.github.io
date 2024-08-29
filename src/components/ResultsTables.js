@@ -1,13 +1,20 @@
 // UsersTable.js
-import React, { useMemo } from 'react';
+import React, { useMemo, useState } from 'react'; // Combine imports from 'react'
 import { useTable } from 'react-table';
-import Tile from "./Tile.js"
-import '../css/pages.css'
-import "../css/tiles.css"
-import sort from "../images/Sort icon.png"
+import Tile from "./Tile.js";
+import '../css/pages.css';
+import "../css/tiles.css";
+import sort from "../images/Sort icon.png";
+
 //import './UsersTable.css'; // Optional: for custom styling
 
-const ResultsTable = ({ data }) => {
+const ResultsTable = ({ data, showAddUserButton = true  }) => {
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+  
+  const togglePopup = () => {
+    setIsPopupVisible(!isPopupVisible);
+  };
+
   const columns = useMemo(
     () => [
       {
@@ -36,7 +43,9 @@ const ResultsTable = ({ data }) => {
             ))}
           </tr>
         ))}
-        <button class="user-add-button"> + Add User</button>
+        {showAddUserButton && (
+        <button class="user-add-button" onClick={togglePopup}> + Add User</button>
+      )}   
         <button class="sort-btn"> <img src={sort}/></button>
       </thead>
       <tbody {...getTableBodyProps()}>
@@ -52,6 +61,7 @@ const ResultsTable = ({ data }) => {
         })}
       </tbody>
     </table>
+    
   );
 };
 
