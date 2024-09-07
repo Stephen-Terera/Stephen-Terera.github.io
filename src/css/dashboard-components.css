@@ -1,0 +1,8 @@
+.welcome-message{
+  padding-top: 1em; 
+  padding-left: 1em;
+  text-align: left;
+}
+.welcome-message h4{
+  padding-top: 0.2em; 
+}

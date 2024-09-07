@@ -19,6 +19,7 @@
     "mysql2": "^3.11.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-native-progress": "^5.0.1",
     "react-router-dom": "^6.26.1",
     "react-scripts": "^5.0.1",
     "react-slick": "^0.30.2",
@@ -52,6 +53,8 @@
     ]
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
     "gh-pages": "^6.1.1"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
