@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "../css/Header.css";
 import logo from "../images/Removebg_logo.png";
 import { useNavigate } from 'react-router-dom';
+import notification from "../images/notification_icons.png"
+
+//<a href="https://www.flaticon.com/free-icons/notification" title="notification icons">Notification icons created by Pixel perfect - Flaticon</a>
 
 export default function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -44,6 +47,14 @@ export default function Header() {
         alt="ignition-alliance-logo"
         className="header-logo"
       />
+
+      <button classname="notification-btn">
+        <img
+        src={notification}
+        alt="notifications icon. "
+        className="notification-icon"
+        />
+      </button>
 
       {/* Dropdown menu */}
       <div className="dropdown">

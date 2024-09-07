@@ -1,12 +1,15 @@
 *{
     margin: 0;
 }
-
+button{
+  background-color: transparent;
+  border:none;
+}
 header{
     background-color: #228B22;
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 4fr auto auto;
     margin-left: 0;
     height: 3em;
     width: 100%;
@@ -134,6 +137,15 @@ img{
 
   .large-text{
     font-size: 5em;
+  }
+  .notification-icon{
+    padding: 0 ; 
+    width: 1.5em;
+    background-color: transparent;
+    height: 1.5em;
+    justify-self: right;
+    margin-top: 0;
+    
   }
   .wrapper {
     display: flex;
