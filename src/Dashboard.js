@@ -5,6 +5,8 @@ import Footer from "./components/Footer.js";
 import PieChartComponent from "./components/pieChart.js"
 import WelcomeComponent from "./components/WelcomeComponent.js"
 import ProgressComponent from './components/ProgressComponent.js';
+import CurrentCourses from './components/CurrentCourses.js';
+import TodoComponent from './components/To-doComponent.js';
 
 const Dashboard=() => {
   return (
@@ -13,6 +15,8 @@ const Dashboard=() => {
         <Header />
         <WelcomeComponent/>
         <ProgressComponent /> 
+        <CurrentCourses />
+        <TodoComponent />
       </div> 
       <Footer /> 
     </div>

@@ -1,3 +1,4 @@
+
 .welcome-message{
   padding-top: 1em; 
   padding-left: 1em;
@@ -5,4 +6,33 @@
 }
 .welcome-message h4{
   padding-top: 0.2em; 
+}
+.progress-overview{
+  padding-top: 2em; 
+  text-align: left;
+  padding-left: 1em;
+}
+.progress-bar{
+  padding-top: 1em; 
+}
+.progress-overview p{
+  padding-top: 0.5em;
+}
+.progress-overview h4 {
+  text-decoration: bold;
+}
+.achievement-badge{
+  height: 4em;
+  width: 4em; 
+}
+.current-courses
+{
+  text-align: left;
+  padding-left: 1em; 
+  padding-top: 1em; 
+}
+.to-do-component{
+  text-align: left;
+  padding-left: 1em; 
+  padding-top: 1em; 
 }
